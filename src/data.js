@@ -83,3 +83,33 @@ export const works = [
         img: "assets/work/innovation.jpg"
     }
 ]
+
+export const testimonial = [
+    {
+        id: 1,
+        name: "Elon Musk",
+        title: "CEO of Tesla",
+        img: "https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5f47d4de7637290765bce495%2F0x0.jpg%3Fbackground%3D000000%26cropX1%3D1398%26cropX2%3D3908%26cropY1%3D594%26cropY2%3D3102",
+        icon: "assets/twitter.png",
+        desc: "Elon Musk is an entrepreneur and business magnate. He is founder at SpaceX;",
+        featured: false
+    },
+    {
+        id: 2,
+        name: "Jeff Bezos",
+        title: "CEO of Amazon",
+        img: "https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5f469ea85cc82fc8d6083f05%2F960x0.jpg%3Ffit%3Dscale",
+        icon: "assets/linkedin.png",
+        desc: "Elon Musk is an entrepreneur and business magnate. He is the founder at SpaceX;",
+        featured: true
+    },
+    {
+        id: 3,
+        name: "Emma Kane",
+        title: "CEO of Redleaf",
+        img: "https://www.abouttimemagazine.co.uk/wp-content/uploads/2018/03/Emma-Kane-842500-842x423.jpg",
+        icon: "assets/youtube.png",
+        desc: "Elon Musk is an entrepreneur and business magnate. He is the founder at SpaceX;",
+        featured: false
+    }
+]

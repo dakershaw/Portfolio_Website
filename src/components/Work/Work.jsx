@@ -7,7 +7,7 @@ export default function Work() {
     const [curSlide, setCurSlide] = useState(0);
 
     const handleClick = (way) => {
-        way === "left" ? setCurSlide(curSlide > 0 ? curSlide - 1 : 2) : setCurSlide(curSlide < works.length - 1 ? curSlide + 1 : 0)
+        way === "left" ? setCurSlide(curSlide > 0 ? curSlide - 1 : works.length-1) : setCurSlide(curSlide < works.length - 1 ? curSlide + 1 : 0)
     }
 
     return (
