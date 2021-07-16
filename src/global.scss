@@ -4,8 +4,16 @@ $lightGray: #dadada;
 $darkGray: #2A2A32;
 $aquaGreen: #abf5f1;
 
+$mobileWidth: 768px;
+
 @mixin flexCenter(){
     display: flex;
     align-items: center;
     justify-content: center; 
+}
+
+@mixin  mobile {
+    @media screen and (max-width: $mobileWidth){
+        @content
+    }
 }
