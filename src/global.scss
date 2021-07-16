@@ -3,3 +3,9 @@ $themeLight: rgba(230, 46, 86, 0.5);
 $lightGray: #dadada;
 $darkGray: #2A2A32;
 $aquaGreen: #abf5f1;
+
+@mixin flexCenter(){
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}

@@ -1,5 +1,79 @@
 @import "../../global.scss";
 
 .work{
-    background-color: slategray;
+    background-color: $themeColor;
+    @include flexCenter;
+    position: relative;
+
+    .arrow{
+        height: 50px;
+        position: absolute;
+        cursor: pointer;
+
+        &.left{
+            left: 100px;
+            transform: rotateY(180deg);
+        }
+        &.right{
+            right: 100px;
+        }
+    }
+
+    .slider{
+        height: 350px;
+        display: flex;
+        position: absolute;
+        left: 0;
+        transition: all 1s ease-in-out;
+
+        .container{
+            width: 100vw;
+            @include flexCenter;
+
+            .item{
+                width: 700px;
+                height: 100%;
+                background-color: white;
+                border-radius: 20px;
+                @include flexCenter;
+
+                .left{
+                    flex: 4;
+                    height: 80%;
+                    @include flexCenter;
+
+                    .leftContainer{
+                        width: 90%;
+                        height: 70%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        h2{
+                            font-size: 20px;
+                        }
+                        #desc{
+                            font-size: 13px;
+                        }
+                        #date{
+                            font-size: 12px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+
+                .right{
+                    flex: 8;
+                    height: 100%;
+                    @include flexCenter;
+                    overflow: hidden;
+                    
+                    img{
+                        width: 400px;
+                        transform: rotate(-5deg);
+                    }
+                }
+            }
+        }
+    }
 }

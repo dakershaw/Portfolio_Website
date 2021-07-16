@@ -1,6 +1,10 @@
 .App{
     height: 100vh;
 
+    *{
+        overflow: hidden;
+    }
+
     .sections{
         width: 100%;
         height: calc(100vh - 80px);
