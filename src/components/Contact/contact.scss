@@ -4,12 +4,21 @@
     background-color: white;
     display: flex;
     
+    @include mobile{
+        flex-direction: column;
+    }
+
     .left{
         flex: 1;
         overflow: hidden;
 
         img{
             height: 100%;
+        }
+
+        @include mobile{
+            flex: 5;
+            text-align: center;
         }
     }
     .right{
@@ -19,8 +28,16 @@
         align-items: center;
         justify-content: center;
 
+        @include mobile{
+            flex: 7;
+        }
+
         h2{
             font-size: 32px;
+
+            @include mobile{
+                font-size: 20px;
+            }
         }
 
         form{
@@ -37,12 +54,26 @@
                 
                 &:first-child{
                     margin-top: 20px;
+
+                    @include mobile{
+                        margin-top: 0px;
+                    }
+                }
+
+                @include mobile{
+                    width: 200px;
+                    height: 20px;
                 }
             }
             textarea{
                 width: 300px;
                 height: 200px;
                 font-size: 14px;
+                
+                @include mobile{
+                    width: 200px;
+                    height: 100px;
+                }
             }
 
             input, textarea{
@@ -51,6 +82,10 @@
                     border-color: $themeLight;
                     -webkit-box-shadow: 0 0 2px $themeColor;
                     box-shadow: 0 0 2px $themeColor;
+                }
+
+                @include mobile{
+                    font-size: 12px;
                 }
             }
 
@@ -64,15 +99,23 @@
                 font-weight: 500;
                 cursor: pointer;
                 margin-bottom: 20px;
+            
+                @include mobile{
+                    margin-bottom: 5px;
+                    height: 30px;
+                }
             }
 
             span{
                 color: $themeColor;
                 margin-bottom: 30px;
 
-                
                 &.hide{
                     visibility: hidden;                   
+                }
+                
+                @include mobile{
+                    margin-bottom: 0px;
                 }
             }
         }
