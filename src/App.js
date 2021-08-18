@@ -5,6 +5,7 @@ import Portfolio from "./components/Portfolio/Portfolio"
 // import Testimonials from "./components/Testimonials/Testimonials"
 import Work from "./components/Work/Work"
 import Menu from "./components/Menu/Menu"
+import Skills from "./components/Skills/Skills"
 import "./app.scss"
 import { useState } from "react"
 
@@ -16,6 +17,7 @@ function App() {
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className='sections'>
         <Intro />
+        <Skills />
         <Portfolio />
         <Work />
         {/* <Testimonials /> */}

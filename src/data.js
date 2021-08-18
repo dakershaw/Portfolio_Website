@@ -133,3 +133,66 @@ export const testimonial = [
     featured: false,
   },
 ]
+
+export const skills = [
+  {
+    skill: "HTML",
+    progress: "80",
+  },
+  {
+    skill: "CSS",
+    progress: "60",
+  },
+  {
+    skill: "Bootstrap",
+    progress: "70",
+  },
+  {
+    skill: "Bulma",
+    progress: "65",
+  },
+  {
+    skill: "Javascript",
+    progress: "70",
+  },
+  {
+    skill: "ReactJS",
+    progress: "80",
+  },
+  {
+    skill: "Redux",
+    progress: "90",
+  },
+  {
+    skill: "NodeJS",
+    progress: "65",
+  },
+  {
+    skill: "ExpressJS",
+    progress: "70",
+  },
+  {
+    skill: "MongoDB",
+    progress: "70",
+  },
+  {
+    skill: "SQL",
+    progress: "60",
+  },
+  {
+    skill: "Python",
+    progress: "75",
+  },
+  {
+    skill: "Java",
+    progress: "65",
+  },
+  {
+    skill: "OOP",
+    progress: "70",
+  },
+  {
+    skill: "Data Structure & Algorithms",
+    progress: "70",
+  },
+]

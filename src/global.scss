@@ -1,19 +1,38 @@
-$themeColor: #E62E56;
+$themeColor: #e62e56;
 $themeLight: rgba(230, 46, 86, 0.5);
 $lightGray: #dadada;
-$darkGray: #2A2A32;
+$darkGray: #2a2a32;
 $aquaGreen: #abf5f1;
 
 $mobileWidth: 768px;
+$tabletWidth: 1020px;
 
-@mixin flexCenter(){
-    display: flex;
-    align-items: center;
-    justify-content: center; 
+@mixin flexCenter() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@mixin  mobile {
-    @media screen and (max-width: $mobileWidth){
-        @content
-    }
+@mixin mobile {
+  @media screen and (max-width: $tabletWidth) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: $mobileWidth) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
 }

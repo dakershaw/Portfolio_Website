@@ -1,3 +1,5 @@
+@import "./global.scss";
+
 .App {
   height: 100vh;
 
@@ -8,7 +10,7 @@
   .sections {
     width: 100%;
     height: calc(100vh - 80px);
-    background-color: azure;
+    background-color: white;
     position: relative;
     top: 80px;
     scroll-behavior: smooth;
