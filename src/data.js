@@ -65,7 +65,7 @@ export const works = [
   },
   {
     title: "Team Lead Innovation Cup",
-    desc: "Innovation cup is an event organized by ACM empowered by different organization that provides internship to the best Web Developer, Graphic Designer and Machine Learning Engineer",
+    desc: "Organized by ACM empowered by different organization that provides internship to the best Web Developer, Graphic Designer and Machine Learning Engineer",
     date: "21/12/2020 - 02/02/2021",
     img: "assets/work/innovation.jpg",
   },
@@ -94,13 +94,13 @@ export const works = [
     img: "assets/work/logistics.jpg",
   },
   {
-    title: "Organizing Committee Member of MLH Local Hack Day",
-    desc: "Worked in Registration and Admin Events Team to make MLH Local Hack Day soccessful. The event take place in NUST-SEECS, inviting both NUSTians and outsiders to participate in competitive modules.",
+    title: "OC Member of MLH Local Hack Day",
+    desc: "Event took place in NUST-SEECS, inviting both NUSTians and outsiders to participate in competitive modules.",
     date: "09/11/2019 - 10/11/2019",
     img: "assets/work/localhackday.jpg",
   },
   {
-    title: "Organizing Committee Member of DevFest 2019",
+    title: "OC Member of DevFest 2019",
     desc: "Worked in Registration Team of Devfest, the only large-scale developers conference in Pakistan organized by ACM.",
     date: "11/11/2020 - 02/02/2021",
     img: "assets/work/devfest.jpg",

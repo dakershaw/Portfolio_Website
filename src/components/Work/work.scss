@@ -18,6 +18,10 @@
       left: 100px;
       transform: rotateY(180deg);
 
+      @include sm {
+        left: 20px;
+      }
+
       @include mobile {
         left: 5px;
       }
@@ -25,6 +29,9 @@
     &.right {
       right: 100px;
 
+      @include sm {
+        right: 20px;
+      }
       @include mobile {
         right: 5px;
       }
@@ -38,8 +45,8 @@
     left: 0;
     transition: all 1s ease-in-out;
 
-    .container {
-      width: 100vw;
+    .cont {
+      width: 100vw !important;
       @include flexCenter;
 
       .item {
@@ -72,6 +79,7 @@
 
             h2 {
               font-size: 20px;
+              overflow: hidden;
 
               @include mobile {
                 font-size: 16px;
@@ -79,6 +87,7 @@
             }
             #desc {
               font-size: 13px;
+              overflow: hidden;
 
               @include mobile {
                 // font-size: 10px;

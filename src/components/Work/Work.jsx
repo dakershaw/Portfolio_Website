@@ -18,7 +18,7 @@ export default function Work() {
         style={{ transform: `translateX(-${curSlide * 100}vw)` }}
       >
         {works.map((d, index) => (
-          <div key={index} className='container'>
+          <div key={index} className='cont'>
             <div className='item'>
               <div className='left'>
                 <div className='leftContainer'>
@@ -28,7 +28,7 @@ export default function Work() {
                 </div>
               </div>
               <div className='right'>
-                <img src={d.img} alt='Innovation Cup' />
+                <img src={d.img} alt={d.title} />
               </div>
             </div>
           </div>
