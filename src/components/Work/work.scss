@@ -15,15 +15,11 @@
     }
 
     &.left {
-      left: 100px;
+      left: 5px;
       transform: rotateY(180deg);
 
       @include sm {
         left: 20px;
-      }
-
-      @include mobile {
-        left: 5px;
       }
     }
     &.right {
@@ -32,9 +28,6 @@
       @include sm {
         right: 20px;
       }
-      // @include mobile {
-      //   right: 5px;
-      // }
     }
   }
 

@@ -1,7 +1,6 @@
-export const web = [
+export const completed = [
   {
     title: "Ecommercia",
-    inProgress: false,
     desc: "Electronic equipment selling platform",
     img: "assets/web/ecommercia.png",
     link: "https://ecommerciashop.herokuapp.com/",
@@ -9,12 +8,36 @@ export const web = [
   },
   {
     title: "Covid-19 Tracker",
-    inProgress: false,
     desc: "Keep track of world's covid-19 situation",
     img: "assets/web/covid-19 tracker.png",
     link: "https://covid-19-tracker-edc3e.web.app/",
     code: "https://github.com/hamidayb/Covid-19-Tracker",
   },
+
+  {
+    title: "Medics",
+    desc: "Online Drug Store",
+    img: "assets/web/medics.png",
+    link: "",
+    code: "",
+  },
+  // {
+  //   title: "Baigro",
+  //   desc: "Social Networking Website",
+  //   img: "assets/web/social.png",
+  //   link: "",
+  //   code: "",
+  // },
+  {
+    title: "Elixir",
+    desc: "Web Templates Selling Website",
+    img: "assets/web/elixir.png",
+    link: "",
+    code: "https://github.com/hamidayb/elixir",
+  },
+]
+
+export const inprogress = [
   {
     title: "Whatsapp Clone",
     inProgress: true,
@@ -22,29 +45,6 @@ export const web = [
     img: "assets/web/whatsapp-clone.png",
     link: "https://whatsapp-clone-28134.web.app/",
     code: "https://github.com/hamidayb/whatsapp-clone",
-  },
-  {
-    title: "Medics",
-    inProgress: false,
-    desc: "Online Drug Store",
-    img: "assets/web/medics.png",
-    link: "",
-    code: "",
-  },
-  //   {
-  //     title: "Baigro",
-  //     desc: "Social Networking Website",
-  //     img: "assets/web/social.png",
-  //     link: "",
-  //     code: "",
-  //   },
-  {
-    title: "Elixir",
-    inProgress: false,
-    desc: "Web Templates Selling Website",
-    img: "assets/web/elixir.png",
-    link: "",
-    code: "https://github.com/hamidayb/elixir",
   },
   {
     title: "Hamid Blog's",
