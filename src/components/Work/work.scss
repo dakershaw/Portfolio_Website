@@ -27,14 +27,14 @@
       }
     }
     &.right {
-      right: 100px;
+      right: 5px;
 
       @include sm {
         right: 20px;
       }
-      @include mobile {
-        right: 5px;
-      }
+      // @include mobile {
+      //   right: 5px;
+      // }
     }
   }
 

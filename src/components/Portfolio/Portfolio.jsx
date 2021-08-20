@@ -40,7 +40,7 @@ export default function Portfolio() {
                     <PortfolioList key={item.id} id={item.id} title={item.title} active={selected === item.id} setSelected={setSelected} />
                 ))}
       </ul> */}
-      <div className='container'>
+      <div className='cont'>
         {data.map((d, index) => (
           <div className='item' key={index}>
             <img src={d.img} alt={d.title} />

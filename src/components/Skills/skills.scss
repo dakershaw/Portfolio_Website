@@ -1,9 +1,12 @@
 @import "../../global.scss";
 
 .skills {
-  height: auto !important;
+  height: 100vh;
   margin-bottom: 20px;
 
+  @include mobile {
+    height: auto !important;
+  }
   .container {
     h2 {
       text-align: center;

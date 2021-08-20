@@ -1,123 +1,144 @@
 @import "../../global.scss";
 
-.contact{
-    background-color: white;
+.contact {
+  background-color: white;
+  display: flex;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  .left {
+    flex: 1;
+    overflow: hidden;
+
+    img {
+      height: 100%;
+    }
+
+    @include mobile {
+      flex: 5;
+      text-align: center;
+    }
+  }
+  .right {
+    flex: 1;
     display: flex;
-    
-    @include mobile{
-        flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include mobile {
+      flex: 7;
     }
 
-    .left{
-        flex: 1;
-        overflow: hidden;
+    h2 {
+      font-size: 32px;
 
-        img{
-            height: 100%;
-        }
-
-        @include mobile{
-            flex: 5;
-            text-align: center;
-        }
+      @include mobile {
+        font-size: 20px;
+      }
     }
-    .right{
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
 
-        @include mobile{
-            flex: 7;
+    .social-icons {
+      font-size: 24px;
+
+      i {
+        cursor: pointer;
+        transition: 0.3s ease;
+        &:hover {
+          color: $themeColor;
         }
-
-        h2{
-            font-size: 32px;
-
-            @include mobile{
-                font-size: 20px;
-            }
+        &:not(:first-child) {
+          margin-left: 10px;
         }
-
-        form{
-            width: 70%;
-            height: 70%;
-            @include flexCenter;
-            justify-content: space-around;
-            flex-direction: column;
-            
-            input{
-                width: 300px;
-                height: 30px;
-                font-size: 14px;
-                
-                &:first-child{
-                    margin-top: 20px;
-
-                    @include mobile{
-                        margin-top: 0px;
-                    }
-                }
-
-                @include mobile{
-                    width: 200px;
-                    height: 20px;
-                }
-            }
-            textarea{
-                width: 300px;
-                height: 200px;
-                font-size: 14px;
-                
-                @include mobile{
-                    width: 200px;
-                    height: 100px;
-                }
-            }
-
-            input, textarea{
-                outline: none;
-                &:focus{
-                    border-color: $themeLight;
-                    -webkit-box-shadow: 0 0 2px $themeColor;
-                    box-shadow: 0 0 2px $themeColor;
-                }
-
-                @include mobile{
-                    font-size: 12px;
-                }
-            }
-
-            button{
-                width: 150px;
-                height: 30px;
-                color: white;
-                background-color: $themeColor;
-                border: none;
-                border-radius: 5px;
-                font-weight: 500;
-                cursor: pointer;
-                margin-bottom: 20px;
-            
-                @include mobile{
-                    margin-bottom: 5px;
-                    height: 30px;
-                }
-            }
-
-            span{
-                color: $themeColor;
-                margin-bottom: 30px;
-
-                &.hide{
-                    visibility: hidden;                   
-                }
-                
-                @include mobile{
-                    margin-bottom: 0px;
-                }
-            }
-        }
+      }
     }
+
+    .contact-item {
+      padding: 10px;
+      font-size: 24px;
+    }
+
+    form {
+      width: 70%;
+      height: 70%;
+      @include flexCenter;
+      justify-content: space-around;
+      flex-direction: column;
+
+      input {
+        width: 300px;
+        height: 30px;
+        font-size: 14px;
+
+        &:first-child {
+          margin-top: 20px;
+
+          @include mobile {
+            margin-top: 0px;
+          }
+        }
+
+        @include mobile {
+          width: 200px;
+          height: 20px;
+        }
+      }
+      textarea {
+        width: 300px;
+        height: 200px;
+        font-size: 14px;
+
+        @include mobile {
+          width: 200px;
+          height: 100px;
+        }
+      }
+
+      input,
+      textarea {
+        outline: none;
+        &:focus {
+          border-color: $themeLight;
+          -webkit-box-shadow: 0 0 2px $themeColor;
+          box-shadow: 0 0 2px $themeColor;
+        }
+
+        @include mobile {
+          font-size: 12px;
+        }
+      }
+
+      button {
+        width: 150px;
+        height: 30px;
+        color: white;
+        background-color: $themeColor;
+        border: none;
+        border-radius: 5px;
+        font-weight: 500;
+        cursor: pointer;
+        margin-bottom: 20px;
+
+        @include mobile {
+          margin-bottom: 5px;
+          height: 30px;
+        }
+      }
+
+      span {
+        color: $themeColor;
+        margin-bottom: 30px;
+
+        &.hide {
+          visibility: hidden;
+        }
+
+        @include mobile {
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
 }
