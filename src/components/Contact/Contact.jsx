@@ -15,31 +15,25 @@ export default function Contact() {
       <div className='right'>
         <h2>Connect With Me.</h2>
         <div className='social-icons'>
-          <i className='fab fa-facebook'></i>
-          <i className='fab fa-linkedin'></i>
-          <i className='fab fa-instagram'></i>
-          <i className='fab fa-twitter'></i>
+          <a href='https://web.facebook.com/hamid.ayub.587'>
+            <i className='fab fa-facebook' />{" "}
+          </a>
+          <a href='https://www.linkedin.com/in/hamid-ayub-b80080175/'>
+            <i className='fab fa-linkedin' />
+          </a>
+          <a href='https://www.instagram.com/hamid_ayub12/'>
+            <i className='fab fa-instagram' />
+          </a>
+          <a href='https://twitter.com/HamidAy15686995'>
+            <i className='fab fa-twitter' />
+          </a>
+          <a href='https://github.com/hamidayb'>
+            <i className='fab fa-github' />
+          </a>
+          <a href='mailto:hamidofficial9@gmail.com'>
+            <i className='fas fa-envelope' />
+          </a>
         </div>
-        <div className='contact-item'>
-          <i className='fas fa-envelope' />
-          <span>hamidofficial9@gmail.com</span>
-        </div>
-        <div className='contact-item'>
-          <i className='fab fa-github' />
-          <span></span>
-        </div>
-        <div className='contact-item'>
-          <i className='fab fa-chrome' />
-          <span></span>
-        </div>
-        {/* <form onSubmit={handleSubmit}>
-                    <input type="text" placeholder="Email" />
-                    <input type="text" placeholder="Name" />
-                    <textarea placeholder="Message"></textarea>
-                    <button>Submit</button>
-                    <span className={msg ? "" : "hide"}>Thanks, I'll reply ASAP :)</span> */}
-        {/* {msg ? <span>Thanks, I'll reply ASAP :)</span> : <span>  </span>} */}
-        {/* </form> */}
       </div>
     </div>
   )
